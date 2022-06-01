@@ -1,6 +1,13 @@
-﻿Console.Write("Enter The Length of the Array: ");
+﻿/*FCFS*/
 
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* دریافت طول آرایه*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+Console.Write("Enter The Length of the Array: ");
 int x = int.Parse(Console.ReadLine());
+
+
 int at = 0;
 int bt = 0;
 
@@ -15,6 +22,10 @@ int[] Waiting_Time = new int[x];
 
 Console.WriteLine();
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*دریافت مقادیر زمان ورود و زمان پردازش*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 for (int j = 0; j < Arrival_Time.Length; j++)
 {
     
@@ -27,6 +38,8 @@ for (int j = 0; j < Arrival_Time.Length; j++)
     bt = int.Parse(Console.ReadLine());
     Burst_Time[j] = bt;
 
+    /*به دست آوردن مقادیر زمان اتمام*/
+
     if (j==0)
     {
         Finish_Time[j]=Arrival_Time[j]+Burst_Time[j];
@@ -35,18 +48,25 @@ for (int j = 0; j < Arrival_Time.Length; j++)
     {
         Finish_Time[j]=Finish_Time[j-1]+Burst_Time[j];
     }
-
+    /*به دست آوردن زمان برگشت*/
     Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
-
+    /*به دست آوردن زمان انتظار*/
     Waiting_Time[j]=Turn_Around[j]-Burst_Time[j];
 
     tt += Turn_Around[j];
     wt += Waiting_Time[j];
 }
+
+/*به دست آوردن میانگین زمان برگشت و زمان انتظار*/
 tt/=x;
 wt/=x;
-Console.WriteLine();
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*نمایش مقادیر پردازش شده*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+Console.WriteLine("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
+System.Console.WriteLine();
 Console.WriteLine("Process\t Arrival Time\t Burst Time\t Finish Time\t Turnaround Time\t Waiting Time");
 
 Console.WriteLine();
