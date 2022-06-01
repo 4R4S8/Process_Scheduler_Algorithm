@@ -1,0 +1,5 @@
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\obj\Debug\net6.0\OS.csproj.AssemblyReference.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\obj\Debug\net6.0\OS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\obj\Debug\net6.0\OS.AssemblyInfoInputs.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\obj\Debug\net6.0\OS.AssemblyInfo.cs
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\obj\Debug\net6.0\OS.csproj.CoreCompileInputs.cache

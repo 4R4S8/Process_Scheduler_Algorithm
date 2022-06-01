@@ -1,0 +1,30 @@
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.csproj.AssemblyReference.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.AssemblyInfoInputs.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.AssemblyInfo.cs
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.csproj.CoreCompileInputs.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\bin\Debug\net6.0\First Attempt.exe
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\bin\Debug\net6.0\First Attempt.deps.json
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\bin\Debug\net6.0\First Attempt.runtimeconfig.json
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\bin\Debug\net6.0\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\bin\Debug\net6.0\First Attempt.pdb
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\refint\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.pdb
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\First Attempt.genruntimeconfig.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\First Attempt\obj\Debug\net6.0\ref\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\bin\Debug\net6.0\First Attempt.exe
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\bin\Debug\net6.0\First Attempt.deps.json
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\bin\Debug\net6.0\First Attempt.runtimeconfig.json
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\bin\Debug\net6.0\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\bin\Debug\net6.0\First Attempt.pdb
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.csproj.AssemblyReference.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.AssemblyInfoInputs.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.AssemblyInfo.cs
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.csproj.CoreCompileInputs.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\refint\First Attempt.dll
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.pdb
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\First Attempt.genruntimeconfig.cache
+C:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Main\obj\Debug\net6.0\ref\First Attempt.dll
