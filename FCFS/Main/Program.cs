@@ -7,6 +7,7 @@ int bt = 0;
 int[] Finish_Time=new int[x];
 int[] Arrival_Time=new int[x];
 int[] Burst_Time=new int[x];
+int[] Turn_Around=new int[x];
 
 Console.WriteLine();
 
@@ -30,6 +31,9 @@ for (int j = 0; j < Arrival_Time.Length; j++)
     {
         Finish_Time[j]=Finish_Time[j-1]+Burst_Time[j];
     }
+
+    Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
+
 }
 
 //Console.WriteLine(Finish_Time[0]);
@@ -42,8 +46,7 @@ Console.WriteLine();
 
 for (int i = 0; i < x; i++)
 {
-    Console.WriteLine("P{0}\t{1}\t\t{2}\t\t{3}",i+1,Arrival_Time[i],Burst_Time[i],Finish_Time[i]);
+    Console.WriteLine("P{0}\t{1}\t\t{2}\t\t{3}\t\t{4}",i+1,Arrival_Time[i],Burst_Time[i],Finish_Time[i],Turn_Around[i]);
 
     Console.WriteLine();
-    
 }
