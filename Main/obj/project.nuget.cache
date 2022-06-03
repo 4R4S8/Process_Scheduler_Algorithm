@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6fe4oQWa0DK3zQJ+n0xitsQCaEkwHaX5g5KLOtTz9eL+W0PWFDB9A/03p9FSDTYFEVU9XAJEBq4abAKB/URLWg==",
+  "dgSpecHash": "4IX4285FKYrh/OtU29ARrBHAIuj8Ske0dG/Bz6wpe9l0v8Y+//dBCd7NKCybzmIs4snGssC3Y6Psr/CDdzaeIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arash\\Desktop\\OS Projects\\process scheduler\\OS\\FCFS\\Main\\First Attempt.csproj",
+  "projectFilePath": "C:\\Users\\arash\\Desktop\\OS Projects\\process scheduler\\OS\\Main\\First Attempt.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

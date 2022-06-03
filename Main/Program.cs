@@ -18,7 +18,7 @@ switch (choose)
         int x = 0;
         double at = 0;
         double bt = 0;
-        
+
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه                                                                                */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -300,13 +300,15 @@ switch (choose)
         Console.Write("Enter The Length of the Array: ");
         x = Convert.ToInt32(Console.ReadLine());
 
+        Console.Write("\nEnter Time Quantum: ");
+        q = Convert.ToInt32(Console.ReadLine());
+
         double tt = 0;
         double wt = 0;
 
         double[] Finish_Time = new double[x];
         double[] Arrival_Time = new double[x];
         double[] Burst_Time = new double[x];
-        double[] Quantum =new double[x];
         double[] Turn_Around = new double[x];
         double[] Waiting_Time = new double[x];
 
@@ -328,9 +330,6 @@ switch (choose)
             bt = Convert.ToInt32(Console.ReadLine());
             Burst_Time[j] = bt;
 
-            Console.Write("P{0} Time Quantum: ",j+1);
-            q = Convert.ToInt32(Console.ReadLine());
-            Quantum[j] = q;
 
             /*به دست آوردن مقادیر زمان اتمام*/
 
