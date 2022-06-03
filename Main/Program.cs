@@ -15,10 +15,10 @@ switch (choose)
         |_|       \_____| |_|      |_____/
         ");
 
-        int x=0;
-        int at = 0;
-        int bt = 0;
-
+        int x = 0;
+        double at = 0;
+        double bt = 0;
+        
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه                                                                                */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -29,11 +29,11 @@ switch (choose)
         double tt = 0;
         double wt = 0;
 
-        int[] Finish_Time = new int[x];
-        int[] Arrival_Time = new int[x];
-        int[] Burst_Time = new int[x];
-        int[] Turn_Around = new int[x];
-        int[] Waiting_Time = new int[x];
+        double[] Finish_Time = new double[x];
+        double[] Arrival_Time = new double[x];
+        double[] Burst_Time = new double[x];
+        double[] Turn_Around = new double[x];
+        double[] Waiting_Time = new double[x];
 
      
         Console.WriteLine();
@@ -106,10 +106,9 @@ switch (choose)
         |_____/   \____/  |_|
         ");
 
-        int x=0;
-        int at = 0;
-        int bt = 0;
-
+        int x = 0;
+        double at = 0;
+        double bt = 0;
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه                                                                                */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -120,11 +119,11 @@ switch (choose)
         double tt = 0;
         double wt = 0;
 
-        int[] Finish_Time = new int[x];
-        int[] Arrival_Time = new int[x];
-        int[] Burst_Time = new int[x];
-        int[] Turn_Around = new int[x];
-        int[] Waiting_Time = new int[x];
+        double[] Finish_Time = new double[x];
+        double[] Arrival_Time = new double[x];
+        double[] Burst_Time = new double[x];
+        double[] Turn_Around = new double[x];
+        double[] Waiting_Time = new double[x];
 
      
         Console.WriteLine();
@@ -199,10 +198,9 @@ switch (choose)
                                      
         ");
 
-        int x=0;
-        int at = 0;
-        int bt = 0;
-
+        int x = 0;
+        double at = 0;
+        double bt = 0;
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه                                                                                */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -213,11 +211,11 @@ switch (choose)
         double tt = 0;
         double wt = 0;
 
-        int[] Finish_Time = new int[x];
-        int[] Arrival_Time = new int[x];
-        int[] Burst_Time = new int[x];
-        int[] Turn_Around = new int[x];
-        int[] Waiting_Time = new int[x];
+        double[] Finish_Time = new double[x];
+        double[] Arrival_Time = new double[x];
+        double[] Burst_Time = new double[x];
+        double[] Turn_Around = new double[x];
+        double[] Waiting_Time = new double[x];
 
      
         Console.WriteLine();
@@ -291,10 +289,10 @@ switch (choose)
         |_|  \_\ |_|  \_\
         
         ");
-        int x=0;
-        int at = 0;
-        int bt = 0;
-
+        int x = 0;
+        double at = 0;
+        double bt = 0;
+        double q = 0;
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه                                                                                */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -305,17 +303,18 @@ switch (choose)
         double tt = 0;
         double wt = 0;
 
-        int[] Finish_Time = new int[x];
-        int[] Arrival_Time = new int[x];
-        int[] Burst_Time = new int[x];
-        int[] Turn_Around = new int[x];
-        int[] Waiting_Time = new int[x];
+        double[] Finish_Time = new double[x];
+        double[] Arrival_Time = new double[x];
+        double[] Burst_Time = new double[x];
+        double[] Quantum =new double[x];
+        double[] Turn_Around = new double[x];
+        double[] Waiting_Time = new double[x];
 
      
         Console.WriteLine();
 
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
-        /*دریافت مقادیر زمان ورود و زمان پردازش                                                          */
+        /* دریافت مقادیر زمان ورود و زمان پردازش و کوانتوم زمانی                                        */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         for (int j = 0; j < x; j++)
         { 
@@ -328,6 +327,10 @@ switch (choose)
             Console.Write("P{0} Burst Time: ",j+1);
             bt = Convert.ToInt32(Console.ReadLine());
             Burst_Time[j] = bt;
+
+            Console.Write("P{0} Time Quantum: ",j+1);
+            q = Convert.ToInt32(Console.ReadLine());
+            Quantum[j] = q;
 
             /*به دست آوردن مقادیر زمان اتمام*/
 
