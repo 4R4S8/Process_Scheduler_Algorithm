@@ -1,16 +1,6 @@
-﻿int x=0;
+﻿
 
-int at = 0;
-int bt = 0;
 
-double tt = 0;
-double wt = 0;
-
-int[] Finish_Time = new int[x];
-int[] Arrival_Time = new int[x];
-int[] Burst_Time = new int[x];
-int[] Turn_Around = new int[x];
-int[] Waiting_Time = new int[x];
 
 System.Console.Write("Choose The Process Scheduler Arlgorithm:\n[1] FCFS\n[2] SJF\n[3] SRTF\n[4] RR\nEnter Your Choice: ");
 int choose = int.Parse(Console.ReadLine());
@@ -19,7 +9,8 @@ switch (choose)
 {
     case 1:
     {
-        System.Console.WriteLine(@"
+
+          System.Console.WriteLine(@"
          ______    _____   ______    _____
         |  ____|  / ____| |  ____|  / ____|
         | |__    | |      | |__    | (___
@@ -28,27 +19,42 @@ switch (choose)
         |_|       \_____| |_|      |_____/
         ");
 
+        int x=0;
+        int at = 0;
+        int bt = 0;
+
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه*/
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
         Console.Write("Enter The Length of the Array: ");
         x = int.Parse(Console.ReadLine());
 
+        double tt = 0;
+        double wt = 0;
+
+        int[] Finish_Time = new int[x];
+        int[] Arrival_Time = new int[x];
+        int[] Burst_Time = new int[x];
+        int[] Turn_Around = new int[x];
+        int[] Waiting_Time = new int[x];
+
+     
         Console.WriteLine();
 
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /*دریافت مقادیر زمان ورود و زمان پردازش*/
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-        for (int j = 0; j < Arrival_Time.Length; j++)
+        for (int j = 0; j < x; j++)
         {
             Console.WriteLine();
+
             Console.Write("P{0} Arrival Time: ",j+1);
-            at = int.Parse(Console.ReadLine());
+            at = Convert.ToInt32(Console.ReadLine());
             Arrival_Time[j] = at;
 
             Console.Write("P{0} Burst Time: ",j+1);
-            bt = int.Parse(Console.ReadLine());
+            bt = Convert.ToInt32(Console.ReadLine());
             Burst_Time[j] = bt;
 
             /*به دست آوردن مقادیر زمان اتمام*/
@@ -78,7 +84,6 @@ switch (choose)
         /*نمایش مقادیر پردازش شده*/
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-        Console.WriteLine("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
         System.Console.WriteLine();
         Console.WriteLine("Process\t Arrival Time\t Burst Time\t Finish Time\t Turnaround Time\t Waiting Time");
 
@@ -96,7 +101,7 @@ switch (choose)
 
     case 2:
     {
-        System.Console.WriteLine(@"
+        Console.WriteLine(@"
           _____        _   ______
          / ____|      | | |  ____|
         | (___        | | | |__
@@ -110,7 +115,7 @@ switch (choose)
 
     case 3:
     {
-        System.Console.WriteLine(@"
+        Console.WriteLine(@"
           _____   _____    _______   ______ 
          / ____| |  __ \  |__   __| |  ____|
         | (___   | |__) |    | |    | |__   
@@ -124,7 +129,7 @@ switch (choose)
 
     case 4:
     {
-        System.Console.WriteLine(@"
+        Console.WriteLine(@"
         _____    _____  
         |  __ \  |  __ \ 
         | |__) | | |__) |
