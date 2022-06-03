@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Stable
-build_property.ProjectDir = c:\Users\arash\Desktop\OS Projects\process scheduler\OS\FCFS\Stable\
+build_property.RootNamespace = First_Attempt
+build_property.ProjectDir = c:\Users\arash\Desktop\OS Projects\process scheduler\OS\Main\
