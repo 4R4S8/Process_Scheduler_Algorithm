@@ -1,4 +1,4 @@
-﻿System.Console.Write("Choose The Process Scheduler Arlgorithm:\n[1] FCFS\n[2] SJF\n[3] SRTF\n[4] RR\nEnter Your Choice: ");
+﻿System.Console.Write("\nChoose The Process Scheduler Arlgorithm:\n[1] FCFS\n[2] SJF\n[3] SRTF\n[4] RR\nEnter Your Choice: ");
 int choose = Convert.ToInt32(Console.ReadLine());
 
 switch (choose)
@@ -29,6 +29,8 @@ switch (choose)
         double tt = 0;
         double wt = 0;
 
+        string gantt_chart="";
+
         double[] Finish_Time = new double[x];
         double[] Arrival_Time = new double[x];
         double[] Burst_Time = new double[x];
@@ -57,11 +59,28 @@ switch (choose)
 
             if (j==0)
             {
+                //Gantt Chart
+                gantt_chart+=Arrival_Time[j];
+                
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Arrival_Time[j]+Burst_Time[j];
+                //محاسبه زمان پایان
                 Finish_Time[j]=Arrival_Time[j]+Burst_Time[j];
             }
             else
             {
+                //محاسبه زمان پایان
                 Finish_Time[j]=Finish_Time[j-1]+Burst_Time[j];
+                //Gantt Chart
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Finish_Time[j];
+
             }
             /*به دست آوردن زمان برگشت*/
             Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
@@ -79,7 +98,7 @@ switch (choose)
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /*نمایش مقادیر پردازش شده                                                                         */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+        System.Console.Write("\n{0}\n",gantt_chart);
         System.Console.WriteLine();
         Console.WriteLine("Process\t Arrival Time\t Burst Time\t Finish Time\t Turnaround Time\t Waiting Time");
 
@@ -109,6 +128,7 @@ switch (choose)
         int x = 0;
         double at = 0;
         double bt = 0;
+
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /* دریافت طول آرایه                                                                                */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -118,6 +138,8 @@ switch (choose)
 
         double tt = 0;
         double wt = 0;
+
+        string gantt_chart="";
 
         double[] Finish_Time = new double[x];
         double[] Arrival_Time = new double[x];
@@ -147,11 +169,28 @@ switch (choose)
 
             if (j==0)
             {
+                //Gantt Chart
+                gantt_chart+=Arrival_Time[j];
+                
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Arrival_Time[j]+Burst_Time[j];
+                //محاسبه زمان پایان
                 Finish_Time[j]=Arrival_Time[j]+Burst_Time[j];
             }
             else
             {
+                //محاسبه زمان پایان
                 Finish_Time[j]=Finish_Time[j-1]+Burst_Time[j];
+                //Gantt Chart
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Finish_Time[j];
+
             }
             /*به دست آوردن زمان برگشت*/
             Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
@@ -169,7 +208,7 @@ switch (choose)
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /*نمایش مقادیر پردازش شده                                                                          */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+        System.Console.Write("\n{0}\n",gantt_chart);
         System.Console.WriteLine();
         Console.WriteLine("Process\t Arrival Time\t Burst Time\t Finish Time\t Turnaround Time\t Waiting Time");
 
@@ -210,6 +249,7 @@ switch (choose)
 
         double tt = 0;
         double wt = 0;
+        string gantt_chart="";
 
         double[] Finish_Time = new double[x];
         double[] Arrival_Time = new double[x];
@@ -239,11 +279,28 @@ switch (choose)
 
             if (j==0)
             {
+                //Gantt Chart
+                gantt_chart+=Arrival_Time[j];
+                
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Arrival_Time[j]+Burst_Time[j];
+                //محاسبه زمان پایان
                 Finish_Time[j]=Arrival_Time[j]+Burst_Time[j];
             }
             else
             {
+                //محاسبه زمان پایان
                 Finish_Time[j]=Finish_Time[j-1]+Burst_Time[j];
+                //Gantt Chart
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Finish_Time[j];
+
             }
             /*به دست آوردن زمان برگشت*/
             Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
@@ -261,7 +318,7 @@ switch (choose)
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /*نمایش مقادیر پردازش شده                                                                         */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+        System.Console.Write("\n{0}\n",gantt_chart);
         System.Console.WriteLine();
         Console.WriteLine("Process\t Arrival Time\t Burst Time\t Finish Time\t Turnaround Time\t Waiting Time");
 
@@ -305,6 +362,7 @@ switch (choose)
 
         double tt = 0;
         double wt = 0;
+        string gantt_chart="";
 
         double[] Finish_Time = new double[x];
         double[] Arrival_Time = new double[x];
@@ -335,11 +393,28 @@ switch (choose)
 
             if (j==0)
             {
+                //Gantt Chart
+                gantt_chart+=Arrival_Time[j];
+                
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Arrival_Time[j]+Burst_Time[j];
+                //محاسبه زمان پایان
                 Finish_Time[j]=Arrival_Time[j]+Burst_Time[j];
             }
             else
             {
+                //محاسبه زمان پایان
                 Finish_Time[j]=Finish_Time[j-1]+Burst_Time[j];
+                //Gantt Chart
+                for (int i = 0; i < Burst_Time[j]; i++)
+                {
+                gantt_chart+="-";
+                }
+                gantt_chart+=Finish_Time[j];
+
             }
             /*به دست آوردن زمان برگشت*/
             Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
@@ -358,7 +433,7 @@ switch (choose)
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
         /*نمایش مقادیر پردازش شده                                                                         */
         /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+        System.Console.Write("\n{0}\n",gantt_chart);
         System.Console.WriteLine();
         Console.WriteLine("Process\t Arrival Time\t Burst Time\t Finish Time\t Turnaround Time\t Waiting Time");
 
