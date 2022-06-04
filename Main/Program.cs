@@ -1,4 +1,4 @@
-﻿System.Console.Write("\nChoose The Process Scheduler Arlgorithm:\n[1] FCFS\n[2] SJF\n[3] SRTF\n[4] RR\nEnter Your Choice: ");
+﻿System.Console.Write("\nChoose The Process Scheduler Arlgorithm:\n[1] FCFS\n[2] SJF\n[3] SRTF\n[4] RR\nYour Choice: ");
 int choose = Convert.ToInt32(Console.ReadLine());
 
 switch (choose)
@@ -338,7 +338,7 @@ switch (choose)
     case 4:
     {
         Console.WriteLine(@"
-        _____    _____  
+         _____    _____  
         |  __ \  |  __ \ 
         | |__) | | |__) |
         |  _  /  |  _  / 
@@ -416,6 +416,7 @@ switch (choose)
                 gantt_chart+=Finish_Time[j];
 
             }
+
             /*به دست آوردن زمان برگشت*/
             Turn_Around[j]=Finish_Time[j]-Arrival_Time[j];
             
@@ -425,8 +426,14 @@ switch (choose)
             tt += Turn_Around[j];
             wt += Waiting_Time[j];
         }
-
+        
+        double a =Arrival_Time[0];
+        for (int i = 0; i < Finish_Time[x-1]; i++)
+        {
+            //gantt_chart+=()
+        }
         /*به دست آوردن میانگین زمان برگشت و زمان انتظار*/
+
         tt/=x;
         wt/=x;
 
